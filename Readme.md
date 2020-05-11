@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Никита Лесняк](https://up.htmlacademy.ru/htmlcss/28/user/1414069).
-* Наставник: `Неизвестно`.
+* Наставник: [Алексей Хабиров](https://htmlacademy.ru/profile/alex_khab).
 
 ---
 
