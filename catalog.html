@@ -6,15 +6,15 @@
   </head>
   <body>
     <header>
-      <h1>Интернет-магазин строительных товаров ТЕХНОМАРТ</h1>
+      <h1 class="visually-hidden">Интернет-магазин строительных товаров ТЕХНОМАРТ</h1>
       <div>
         <div>
           <a href="index.html">
             <img src="img/logo-technomart.svg" alt="Логотип Техномарт" width="108" height="18">
           </a>
         </div>
-        <form>
-          <input type="search" placeholder="Поиск:" value required>
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <input type="search" placeholder="Поиск:" name="search" required>
         </form>
         <ul>
           <li>
@@ -86,7 +86,7 @@
     </header>
     <main>
       <section>
-        <h2>Хлебные крошки</h2>
+        <h2 class="visually-hidden">Хлебные крошки</h2>
         <ul>
           <li>
             <a href="index.html">Домой</a>
@@ -105,29 +105,71 @@
       <section>
         <h2>Перфораторы</h2>
         <div>
-          <form>
+          <form action="https://echo.htmlacademy.ru" method="get">
+
             <h4>Фильтр:</h4>
-            <div>
-              <h3>Цена:</h3>
+
+            <fieldset>
+              <legend>Цена:</legend>
+
               <div>
-                <button>Левая точка</button>
-                <button>Правая точка</button>
+                <div>
+                  <label for="left-range-btn" class="visually-hidden">Левый ползунок цены</label>
+                  <input type="range" name="left-range-btn" id="left-range-btn" min="0" max="40000" step="1" value="0">
+                  <label for="right-range-btn">Правый ползунок цены</label>
+                  <input type="range" name="right-range-btn" id="right-range-btn" min="0" max="40000" step="1" value="30000">
+                </div>
               </div>
+
               <div>
-                <span>0</span>
+                <label for="left-range-value" class="visually-hidden">Нижняя грань цены</label>
+                <input type="number" id="left-range-value" min="0" max="40000" value="0">
                 <span>-</span>
-                <span>30000</span>
+                <label for="right-range-value" class="visually-hidden">Верхняя грань цены</label>
+                <input type="number" id="right-range-value" min="0" max="40000" value="30000">
               </div>
-            </div>
-            <div>
-              <h3>Производители:</h3>
-              <!-- Checkbox -->
-            </div>
-            <div>
-              <h3>Питание:</h3>
-              <!-- Checkbox -->
-            </div>
-            <button>Показать</button>
+            </fieldset>
+
+            <fieldset>
+              <legend>Производители:</legend>
+
+              <ul>
+                <li>
+                  <input type="checkbox" name="manuf-bosch" id="manuf-bosch" checked>
+                  <label for="manuf-bosch">Bosch</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="manuf-interskol" id="manuf-interskol">
+                  <label for="manuf-interskol">Интерскол</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="manuf-makita" id="manuf-makita" checked>
+                  <label for="manuf-makita">Makita</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="manuf-dewalt" id="manuf-dewalt">
+                  <label for="manuf-dewalt">Dewalt</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="manuf-hitachi" id="manuf-hitachi">
+                  <label for="manuf-hitachi">Hitachi</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Питание:</legend>
+              <ul>
+                <li>
+                  <input type="radio" name="power-group" id="power-accum" value="accumulator" checked>
+                  <label for="power-accum">Аккумуляторные</label>
+                </li>
+                <li>
+                  <input type="radio" name="power-group" value="net" id="power-net">
+                  <label for="power-net">Сетевые</label>
+                </li>
+              </ul>
+            </fieldset>
+            <input type="submit" value="Показать">
           </form>
         </div>
         <div>
