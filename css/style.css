@@ -3,27 +3,36 @@
 
 :root{
 	--basic-red: #EE3643;
+
 	--basic-green: #63A63E;
+	--special-greenlight:#8ED78F;
+
+	--navy-blue: #1D2739;
+	--special-blue:#3BBCE3;
+	--special-blue-dark: #212A3A;
+	--blue-active: #161D29;
+
+	--special-yellow-darker: #FFC047;
+	--special-yellow:#FFBF47;
+	--special-yellowlight:#FFD180;
+
+	--special-lilac:#DC91D8;
+
+	--basic-black:#000000;
+
+	--white-grey: #F9F5F0;
+	--basic-white:#FFFFFF;
+	--light-grey:#EAEAEA;
+	--basic-greylight:#C5C5C5;
+	--grey-muddy: #A9A9A9;
+
 	--main-theme: #32425C;
 	--main-theme-darker:#293449;
-	--basic-greylight:#C5C5C5;
+
 	--basic-background:#F1F5F7;
-	--color-wight:#FFFFFF;
-	--special-yellow:#FFBF47;
-	--special-blue:#3BBCE3;
-	--special-lilac:#DC91D8;
-	--special-greenlight:#8ED78F;
-	--special-yellowlight:#FFD180;
 	--color-success:#5FBB2D;
 	--color-worning:#FFBF47;
 	--color-error:#BA2732;
-	--light-grey:#EAEAEA;
-	--special-yellow-darker: #FFC047;
-	--basic-black:#000000;
-	--headers-wrapper: #F9F5F0;
-	--grey-muddy: #A9A9A9;
-	--blue-most-dark: #212A3A;
-	--blue-active: #161D29;
 }
 
 
@@ -43,10 +52,12 @@
 body{
 	min-width: 960px;
 	font-size: 18px;
-	color: var(--color-wight);
+	color: var(--basic-white);
 	font-family: 'Cuprum', sans-serif;
 	font-weight: 400;
 	background-color: var(--colour-width);
+	margin: 0;
+	padding: 0;
 }
 
 a {
@@ -93,11 +104,11 @@ input[type="search"]{
 	line-height: 24px;
 	border: none;
 	background-color: transparent;
-	color: var(--color-wight);
+	color: var(--basic-white);
 }
 
 input[type="search"]:focus{
-	background-color: var(--color-wight);
+	background-color: var(--basic-white);
 	color: var(--basic-black);
 }
 
@@ -107,11 +118,11 @@ header li{
 }
 
 header a{
-	color: var(--color-wight);
+	color: var(--basic-white);
 }
 
 .checkout{
-	color: var(--color-wight);
+	color: var(--basic-white);
 	background-color: var(--color-success);
 }
 
@@ -139,7 +150,7 @@ header a{
 }
 
 .header-contacts a{
-	border: 2px solid var(--color-wight);
+	border: 2px solid var(--basic-white);
 	color: var(--basic-red);
 	font-size: 21px;
 	font-weight: 700; 
@@ -156,7 +167,7 @@ header a{
 	font-size: 21px;
 	line-height: 21px;
 	color: var(--basic-black);
-	background-color: var(--color-wight);
+	background-color: var(--basic-white);
 }
 
 .login-registration a:hover{
@@ -177,7 +188,7 @@ header nav a:hover{
 }
 
 header nav a:active{
-	background-color: #1D2739;
+	background-color: var(--navy-blue);
 	color: rgba(255, 255, 255, .5);
 	box-shadow: inset 0px -5px 0px var(--main-theme-darker);
 }
@@ -187,7 +198,7 @@ header nav a:active{
 
 .offers a{
 	background-color: rgba(255, 255, 255, .3);
-	color: var(--color-wight);
+	color: var(--basic-white);
 	font-size: 14px;
 	line-height: 18px;
 	text-transform: uppercase;
@@ -231,7 +242,7 @@ header nav a:active{
 		/*1st part*/
 
 .popular-wrapper{
-	background-color: var(--headers-wrapper);
+	background-color: var(--white-grey);
 }
 
 .popular-wrapper h2{
@@ -246,7 +257,7 @@ header nav a:active{
 	text-transform: uppercase;
 	font-size: 14px;
 	line-height: 18px;
-	color: var(--color-wight);
+	color: var(--basic-white);
 }
 
 article{
@@ -270,7 +281,7 @@ article:hover{
 }
 
 .present-price{
-	color: var(--color-wight);
+	color: var(--basic-white);
 	font-size: 17px;
 	line-height: 18px;
 	font-weight: 700; 
@@ -358,7 +369,7 @@ article:hover{
 	text-transform: uppercase;
 	font-size: 14px;
 	line-height: 18px;
-	color: var(--color-wight);
+	color: var(--basic-white);
 }
 
 	/*Contacts*/
@@ -400,7 +411,7 @@ footer>div:last-child{
 footer p,
 .number{
 	line-height: 24px;
-	color: var(--color-wight);
+	color: var(--basic-white);
 }
 
 .footer-nav li,
@@ -409,7 +420,7 @@ footer p,
 }
 
 .footer-nav a{
-	color: var(--color-wight);
+	color: var(--basic-white);
 	line-height: 24px;
 }
 
@@ -442,7 +453,7 @@ footer address{
 }
 
 .social-networks div{
-	background-color: var(--blue-most-dark);
+	background-color: var(--special-blue-dark);
 	width: 44px;
 	height: 44px;
 	border-radius: 50%;
