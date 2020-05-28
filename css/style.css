@@ -6,6 +6,7 @@
 
 	--basic-green: #63A63E;
 	--special-greenlight:#8ED78F;
+	--special-dark-green: #518534;
 
 	--navy-blue: #1D2739;
 	--special-blue:#3BBCE3;
@@ -16,6 +17,8 @@
 	--special-yellow:#FFBF47;
 	--special-yellowlight:#FFD180;
 
+	--basic-beige: #F7F3EC;
+
 	--special-lilac:#DC91D8;
 
 	--basic-black:#000000;
@@ -25,6 +28,7 @@
 	--light-grey:#EAEAEA;
 	--basic-greylight:#C5C5C5;
 	--grey-muddy: #A9A9A9;
+	--h-grey: #F2F6F8;
 
 	--main-theme: #32425C;
 	--main-theme-darker:#293449;
@@ -72,6 +76,11 @@ img {
 .button{
 	border: none;
 }
+
+
+/*====================================================*/
+/*======================Index=========================*/
+/*====================================================*/
 
 /*Header*/
 	/*1st part*/
@@ -260,18 +269,7 @@ header nav a:active{
 	color: var(--basic-white);
 }
 
-article{
-	border: 1px solid var(--light-grey);
-}
 
-article a{
-	color: var(--basic-black);
-	line-height: 20px;
-}
-
-article:hover{
-	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
-}
 
 .past-price{
 	color: var(--grey-muddy);
@@ -317,7 +315,8 @@ article:hover{
 }
 
 .serveces p{
-	font-family: 'PT Sans', sans-serif;
+	font-family: PT Sans;
+	font-weight: 400;
 	font-size: 13px;
 	line-height: 24px;
 	color: var(--basic-black); 
@@ -343,7 +342,8 @@ article:hover{
 }
 
 .about-company p{
-	font-family: 'PT Sans', sans-serif;
+	font-family: PT Sans;
+	font-weight: 400;
 	font-size: 13px;
 	line-height: 24px;
 }
@@ -384,7 +384,8 @@ article:hover{
 .contacts p{
 	font-size: 13px;
 	line-height: 24px;
-	font-family: 'PT Sans', sans-serif;
+	font-family: PT Sans;
+	font-weight: 400;
 	color: var(--basic-black);
 }
 
@@ -488,8 +489,272 @@ footer address{
 	text-decoration: none;
 }
 
+/*===================================================*/
+/*====================Catalog========================*/
+/*===================================================*/
+
+/*Header*/
+	/*Profile*/
+
+.profile-name-wrapper{
+	background-color: var(--basic-white);
+}
+
+.profile-name a{
+	color: var(--basic-black);
+	font-size: 21px;
+	line-height: 21px;
+}
+
+.profile-navigation a{
+	color: var(--main-theme);
+	font-size: 16px;
+	line-height: 18px;
+}
+
+.icon-logout svg,
+.icon-logout svg:active{
+	fill: var(--basic-greylight);
+}
+
+.icon-logout svg:hover{
+	fill: var(--main-theme);
+}
+
+.profile-name a:active{
+	color: var(--basic-greylight);
+}
+
+.profile-navigation a:hover{
+	color: var(--basic-red);
+}
+
+.profile-navigation a:active{
+	color: var(--basic-greylight);
+}
+
+/*body-parts*/
+	/*breadcrumbs*/
+
+.breadcrumbs a{
+	font-family: PT Sans;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 18px;
+	color: var(--basic-black);
+	text-transform: uppercase;
+}
+
+.product h2{
+	font-weight: 400px;
+	color: var(--main-theme);
+	font-size: 30px;
+	line-height: 30px;
+	text-transform: uppercase;
+	background-color: var(--h-grey);
+}
+
+	/*filter*/
+
+.filter h4,
+.sort h4{
+	font-size: 13px;
+	line-height: 18px;
+	font-family: PT Sans;
+	font-weight: 400;
+	background-color: var(--basic-beige);
+	color: var(--basic-black);
+	text-transform: uppercase;
+}
+
+.filter legend{
+	font-family: PT Sans;
+	font-weight: 700;
+	font-size: 17px;
+	line-height: 30px;
+	color: var(--basic-black);
+	text-transform: uppercase;
+}
+
+.filter fieldset{
+	border: none;
+	border-bottom: 1px solid var(--light-grey);
+}
+
+.filter .last-child{
+	border: none;
+}
+
+.filter-manufacturers label,
+.filter-power label{
+	font-family: PT Sans;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 19px;
+	color: var(--basic-black);
+	text-transform: uppercase;
+}
+
+.filter input[type="submit"]{
+	border: 1px solid var(--light-grey);
+	background-color: transparent;
+	font-family: PT Sans;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 18px;
+	text-transform: uppercase;
+}
+
+	/*sort*/
+
+.sort{
+	background-color: var(--basic-beige);
+}
+
+.sort li{
+	list-style: none;
+}
+
+.sort a{
+	color: var(--basic-greylight);
+	border-bottom: 1px dotted var(--basic-red);
+	font-family: PT Sans;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 18px;
+	text-transform: uppercase;
+}
+
+.sort .icon-sort{
+	border: none;
+}
+
+.sort-up svg{
+	transform: rotate(180deg);
+}
+
+.icon-sort svg{
+	fill: var(--basic-greylight);
+}
+
+.sort a:hover{
+	color: var(--basic-black);
+	border-bottom: 1px solid var(--basic-red);
+}
+.sort .icon-sort:hover{
+	border:none;
+}
+
+.icon-sort:hover svg{
+	fill: var(--basic-black);
+}
+
+.sort-active a{
+	border: none;
+	color: var(--basic-red);
+}
+
+.sort-active svg{
+	fill: var(--basic-red);
+}
+
+	/*articles*/
+
+article{
+	border: 1px solid var(--light-grey);
+}
+
+article a{
+	color: var(--basic-black);
+	line-height: 20px;
+}
+
+article h3{
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 20px;
+}
+
+article:hover{
+	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.purchase-offers li:first-child a:hover{
+	background-color: var(--color-success);
+}
+
+.purchase-offers li:first-child a:active{
+	background-color: var(--special-dark-green);
+}
+
+.purchase-offers li:last-child a:hover{
+	border-color: var(--main-theme);
+}
+
+.purchase-offers li:last-child a:active{
+	opacity: .3;
+}
 
 
 
+.purchase-offers a{
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+}
 
+.purchase-offers li:first-child a{
+	background-color: var(--basic-green);
+	color: var(--basic-white);
+	box-shadow: inset 0px -3px 0px #367315;
+}
 
+.purchase-offers li:last-child a{
+	border: 3px solid var(--basic-green);
+	background-color: transparent;
+}
+
+.pages a{
+	border: 1px solid var(--light-grey);
+	color: var(--basic-black);
+	font-family: PT Sans;
+	font-weight: 400;
+	text-transform: uppercase;
+	font-size: 13px;
+	line-height: 18px;
+}
+
+.pages .active-pages{
+	border: none;
+	background-color: var(--basic-red);
+	color: var(--basic-white);
+}
+
+.pages a:hover{
+	border-color: var(--basic-greylight);
+}
+
+.pages a:active{
+	border-color: var(--basic-red);
+}
+
+	/*description*/
+
+.product-description{
+	background-color: var(--basic-background);
+}
+
+.product-description h2{
+	color: var(--basic-black);
+	text-transform: uppercase;
+	font-size: 30px;
+	line-height: 30px;
+}
+
+.product-description p{
+	font-family: PT Sans;
+	color: var(--basic-black);
+	font-size: 13px;
+	line-height: 24px;
+}
