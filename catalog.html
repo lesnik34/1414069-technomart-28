@@ -58,17 +58,17 @@
           <div class="account-login-wrapper">
             <div class="profile-name-wrapper">
               <ul class="profile-name-roll">
-                <li class="profile-name-list">
+                <li class="profile-name-list profile-image">
                   <a class="profile-link" href="#">
                     <svg class="profile-icon" width="20" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39C-.026 14.902 0 18 0 18h20s.025-3.099-2.119-3.834z"/>
                     </svg>
                   </a>
                 </li>
-                <li class="profile-name-list">
+                <li class="profile-name-list profile-name">
                   <a class="profile-name-text" href="#">Равшан Джамшутович</a>
                 </li>
-                <li class="profile-name-list">
+                <li class="profile-name-list profile-logout">
                   <a class="logout-link" href="#" aria-label="logout">
                     <svg class="logout-icon" width="20" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M20 8.5L11.125 0v6h-6v5h6v6L20 8.5z"/>
@@ -151,20 +151,28 @@
             <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
               <fieldset class="filter-part">
                 <legend class="filter-subtitle">Цена:</legend>
-                <div>
-                  <div>
-                    <label for="left-range-btn" class="visually-hidden">Левый ползунок цены</label>
-                    <input type="range" name="left-range-btn" id="left-range-btn" min="0" max="40000" step="1" value="0">
-                    <label class="visually-hidden" for="right-range-btn">Правый ползунок цены</label>
-                    <input type="range" name="right-range-btn" id="right-range-btn" min="0" max="40000" step="1" value="30000">
+                <div class="filter-range">
+                  <div class="range-wrapper">
+                    <div class="range-bar">
+                      <div class="range-active-bar"></div>
+                    </div>
+
+                    <div class="toggle toggle-min" tabindex="0">
+
+                    </div>
+
+                    <div class="toggle toggle-max" tabindex="0">
+
+                    </div>
                   </div>
-                </div>
-                <div>
-                  <label for="left-range-value" class="visually-hidden">Нижняя грань цены</label>
-                  <input type="number" id="left-range-value" min="0" max="40000" value="0">
-                  <span>-</span>
-                  <label for="right-range-value" class="visually-hidden">Верхняя грань цены</label>
-                  <input type="number" id="right-range-value" min="0" max="40000" value="30000">
+
+                  <div class="range-actions">
+                    <label for="left-range-value" class="visually-hidden">Нижняя грань цены</label>
+                    <input type="number" class="range-value left-range" id="left-range-value" min="0" max="40000" value="0">
+                    <span>-</span>
+                    <label for="right-range-value" class="visually-hidden">Верхняя грань цены</label>
+                    <input type="number" class="range-value right-range" id="right-range-value" min="0" max="40000" value="30000">
+                  </div>
                 </div>
               </fieldset>
               <fieldset class="filter-part">
@@ -211,17 +219,17 @@
           <div class="sort">
             <h4 class="sort-text">Сортировка:</h4>
             <ul class="sort-roll">
-              <li class="sort-list sort-active"><a class="sort-link" href="#">По цене</a></li>
-              <li class="sort-list"><a class="sort-link" href="#">По типу</a></li>
-              <li class="sort-list"><a class="sort-link" href="#">По функционалу</a></li>
-              <li class="sort-list sort-active">
+              <li class="sort-list sort-by-price sort-active"><a class="sort-link" href="#">По цене</a></li>
+              <li class="sort-list sort-by-type"><a class="sort-link" href="#">По типу</a></li>
+              <li class="sort-list sort-by-func"><a class="sort-link" href="#">По функционалу</a></li>
+              <li class="sort-list sort-list-up sort-active">
                 <a href="#" class="sort-direction sort-up" aria-label="По верхней грани">
                   <svg class="sort-icon" width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5.5 10L0 0h11"/>
                   </svg>
                 </a>
               </li>
-              <li class="sort-list">
+              <li class="sort-list sort-list-down">
                 <a href="#" class="sort-direction sort-down" aria-label="По нижней грани">
                   <svg class="sort-icon" width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5.5 10L0 0h11"/>
@@ -235,7 +243,7 @@
               <li class="product-card-list">
                 <article class="product-card">
                   <img class="product-img" src="img/bosch-bfg-6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="144" height="128">
-                  <h3><a class="product-card-link" href="#">Перфоратор BOSCH BFG 6000</a></h3>
+                  <h3 class="product-card-text"><a class="product-card-link" href="#">Перфоратор BOSCH BFG 6000</a></h3>
                   <span class="past-price">30500 Р.</span>
                   <span class="present-price">25500 Р.</span>
                 </article>
@@ -243,7 +251,7 @@
               <li class="product-card-list">
                 <article class="product-card">
                   <img class="product-img" src="img/bosch-bfg-6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="144" height="128">
-                  <h3><a class="product-card-link" href="#">Перфоратор BOSCH BFG 6000</a></h3>
+                  <h3 class="product-card-text"><a class="product-card-link" href="#">Перфоратор BOSCH BFG 6000</a></h3>
                   <span class="past-price">30500 Р.</span>
                   <span class="present-price">25500 Р.</span>
                 </article>
@@ -260,56 +268,56 @@
                       </li>
                     </ul>
                   </div>
-                  <h3><a class="product-card-link" href="#">Перфоратор BOSCH BFG 6000</a></h3>
+                  <h3 class="product-card-text"><a class="product-card-link" href="#">Перфоратор BOSCH BFG 6000</a></h3>
                   <span class="past-price">30500 Р.</span>
                   <span class="present-price">25500 Р.</span>
                 </article>
               </li>
               <li class="product-card-list">
                 <article class="product-card">
-                  <img class="product-img" src="img/bosch-bfg-3000.jpg" alt="Перфоратор BOSCH BFG 3000" width="127" height="112">
-                  <h3><a class="product-card-link" href="#">Перфоратор BOSCH BFG 3000</a></h3>
+                  <img class="product-img" src="img/bosch-bfg-3000.jpg" alt="Перфоратор BOSCH  BFG 3000" width="127" height="112">
+                  <h3 class="product-card-text"><a class="product-card-link" href="#">Перфоратор BOSCH BFG 3000</a></h3>
                   <span class="past-price">22500 Р.</span>
                   <span class="present-price">15500 Р.</span>
                 </article>
               </li>
               <li class="product-card-list">
                 <article class="product-card">
-                  <img class="product-img" src="img/bosch-bfg-6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="144" height="128">
-                  <h3><a class="product-card-link" href="#">Перфоратор BOSCH BFG 6000</a></h3>
+                  <img class="product-img" src="img/bosch-bfg-6000.jpg" alt="Перфоратор BOSCH  BFG 6000" width="144" height="128">
+                  <h3 class="product-card-text"><a class="product-card-link" href="#">Перфоратор BOSCH BFG 6000</a></h3>
                   <span class="past-price">30500 Р.</span>
                   <span class="present-price">25500 Р.</span>
                 </article>
               </li>
               <li class="product-card-list">
                 <article class="product-card">
-                  <img class="product-img" src="img/bosch-bfg-2000.jpg" alt="Перфоратор BOSCH BFG 2000" width="127" height="112">
-                  <h3><a class="product-card-link" href="#">Перфоратор BOSCH BFG 2000</a></h3>
-                  <span class="past-price"></span>
+                  <img class="product-img" src="img/bosch-bfg-2000.jpg" alt="Перфоратор BOSCH  BFG 2000" width="127" height="112">
+                  <h3 class="product-card-text"><a class="product-card-link" href="#">Перфоратор BOSCH BFG 2000</a></h3>
+                  <span class="past-price price-hide">0</span>
                   <span class="present-price">12500 Р.</span>
                 </article>
               </li>
               <li class="product-card-list">
                 <article class="product-card">
-                  <img class="product-img" src="img/bosch-bfg-3000.jpg" alt="Перфоратор BOSCH BFG 3000" width="127" height="112">
-                  <h3><a class="product-card-link" href="#">Перфоратор BOSCH BFG 3000</a></h3>
+                  <img class="product-img" src="img/bosch-bfg-3000.jpg" alt="Перфоратор BOSCH  BFG 3000" width="127" height="112">
+                  <h3 class="product-card-text"><a class="product-card-link" href="#">Перфоратор BOSCH BFG 3000</a></h3>
                   <span class="past-price">22500 Р.</span>
                   <span class="present-price">15500 Р.</span>
                 </article>
               </li>
               <li class="product-card-list">
                 <article class="product-card">
-                  <img class="product-img" src="img/bosch-bfg-6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="144" height="128">
-                  <h3><a class="product-card-link" href="#">Перфоратор BOSCH BFG 6000</a></h3>
+                  <img class="product-img" src="img/bosch-bfg-6000.jpg" alt="Перфоратор BOSCH  BFG 6000" width="144" height="128">
+                  <h3 class="product-card-text"><a class="product-card-link" href="#">Перфоратор BOSCH BFG 6000</a></h3>
                   <span class="past-price">30500 Р.</span>
                   <span class="present-price">25500 Р.</span>
                 </article>
               </li>
               <li class="product-card-list">
                 <article class="product-card">
-                  <img class="product-img" src="img/bosch-bfg-2000.jpg" alt="Перфоратор BOSCH BFG 2000" width="127" height="112">
-                  <h3><a class="product-card-link" href="#">Перфоратор BOSCH BFG 2000</a></h3>
-                  <span class="past-price"></span>
+                  <img class="product-img" src="img/bosch-bfg-2000.jpg" alt="Перфоратор BOSCH  BFG 2000" width="127" height="112">
+                  <h3 class="product-card-text"><a class="product-card-link" href="#">Перфоратор BOSCH BFG 2000</a></h3>
+                  <span class="past-price price-hide">0</span>
                   <span class="present-price">12500 Р.</span>
                 </article>
               </li>
@@ -341,12 +349,12 @@
       <div class="footer-first-layer">
         <div class="container footer-first-container">
           <div class="footer-about">
-            <div class="logo-wrapper">
-              <a class="logo-link" href="index.html">
-                <img class="logo-img" src="img/logo-technomart.svg" alt="Логотип Техномарт" width="138" height="23">
+            <div class="logo-footer-wrapper">
+              <a class="logo-footer-link" href="index.html">
+                <img class="logo-footer-img" src="img/logo-technomart.svg" alt="Логотип Техномарт" width="138" height="23">
               </a>
             </div>
-            <p class="footer-location">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 </p>
+            <p class="footer-location">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
             <a class="footer-phonenumber" href="tel:+78125550555">+7 (812) 555-05-55</a>
           </div>
           <div class="footer-nav-wrapper">
@@ -389,10 +397,10 @@
       <div class="footer-second-layer">
         <div class="footer-second-container container">
           <address class="footer-address">
-            &copy; 2010–2019 Компания «Техномарт»  <br>
-            Все права защищены
+            &copy; 2010–2019 Компания «Техномарт» <br> Все права защищены
           </address>
-          
+
+
           <ul class="social-networks-roll">
             <li class="social-list">
               <a class="social-link social-vk" href="#"></a>
@@ -404,6 +412,7 @@
               <a class="social-link social-instagram" href="#"></a>
             </li>
           </ul>
+
 
           <div class="footer-feedback-wrapper">
             <div class="footer-feedback">
