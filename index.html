@@ -20,7 +20,7 @@
           <form class="header-form-search" action="https://echo.htmlacademy.ru" method="get">
             <button class="button button-search" type="submit">
               <svg class="icon-search" width="17" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586 15.586 17l-3.542-3.542A7.465 7.465 0 017.5 15 7.5 7.5 0 1115 7.5c0 1.643-.542 3.24-1.542 4.544zM7.5 2A5.506 5.506 0 002 7.5 5.506 5.506 0 007.5 13c3.032 0 5.5-2.468 5.5-5.5C13 4.467 10.532 2 7.5 2z" fill="#fff"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586 15.586 17l-3.542-3.542A7.465 7.465 0 017.5 15 7.5 7.5 0 1115 7.5c0 1.643-.542 3.24-1.542 4.544zM7.5 2A5.506 5.506 0 002 7.5 5.506 5.506 0 007.5 13c3.032 0 5.5-2.468 5.5-5.5C13 4.467 10.532 2 7.5 2z"/>
               </svg>
             </button>
             <label class="visually-hidden" for="search">Поиск</label>
@@ -107,7 +107,7 @@
 
           <ul class="product-roll">
             <li class="product-list">
-              <div class="product-colored card-orange">
+              <div class="product-colored card-orange new-item">
                 <h3 class="product-title">Материалы</h3>
                 <a class="product-link" href="#">На любой вкус</a>
               </div>
@@ -125,38 +125,31 @@
               </div>
             </li>
             <li class="product-list slider-list">
-              <div>
-                <div>
-                  <div>
-                    <h2>Перфораторы</h2>
-                    <p>Настоящие мужские игрушки</p>
+              <ul class="product-slider-roll">
+                <li class="product-slider-list slide-product-first slide-active">
+                  <div class="product-head-wrapper">
+                    <h2 class="product-list-title">Перфораторы</h2>
+                    <p class="product-list-text">Настоящие мужские игрушки</p>
                   </div>
-                  <a href="#">Открыть каталог</a>
-                </div>
-                <div>
-                  <div>
-                    <h2>Дрели</h2>
-                    <p>Соседям на радость</p>
+                  <a class="product-list-link" href="catalog.html">Открыть каталог</a>
+                </li>
+                <li class="product-slider-list slide-product-second">
+                  <div class="product-head-wrapper">
+                    <h2 class="product-list-title">Дрели</h2>
+                    <p class="product-list-text">Соседям на радость!</p>
                   </div>
-                  <a href="#">Открыть каталог</a>
-                </div>
+                  <a class="product-list-link" href="catalog.html">Открыть каталог</a>
+                </li>
+              </ul>
+              <div class="product-controls-arrows">
+                <button class="product-arrows product-arrow-left" type="button" aria-label="Пролистать влево"></button>
+                <button class="product-arrows product-arrow-right" type="button" aria-label="Пролистать вправо"></button>
               </div>
-              <div>
-                <button type="button" aria-label="Пролистать влево">
-                  <svg width="8" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M7.237 5.693L1.729.971a.568.568 0 00-.716 0 .392.392 0 000 .614L6.163 6l-5.151 4.414a.391.391 0 00.013.603.57.57 0 00.703.012l5.509-4.722A.404.404 0 007.387 6a.404.404 0 00-.15-.307z" fill="#C1C6CE"/>
-                  </svg>
-                </button>
-                <button type="button" aria-label="Пролистать вправо">
-                  <svg width="8" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M7.237 5.693L1.729.971a.568.568 0 00-.716 0 .392.392 0 000 .614L6.163 6l-5.151 4.414a.391.391 0 00.013.603.57.57 0 00.703.012l5.509-4.722A.404.404 0 007.387 6a.404.404 0 00-.15-.307z" fill="#C1C6CE"/>
-                  </svg>
-                </button>
+              <div class="product-controls-dots">
+                <button class="product-dots product-dot-left product-dot-active" type="button" aria-label="Первый слайд"></button>
+                <button class="product-dots product-dot-right" type="button" aria-label="Второй слайд"></button>
               </div>
-              <div>
-                <button>Левая точка</button>
-                <button>Правая точка</button>
-              </div>
+
             </li>
             <li class="product-list">
               <div class="product-colored card-green">
@@ -184,15 +177,15 @@
               <li class="popular-products-list">
                 <article class="product-card">
                   <img class="product-img" src="img/bosch-bfg-9000.jpg" alt="Перфоратор BOSCH BFG 9000" width="184" height="164">
-                  <h3><a class="product-card-link" href="#">Перфоратор BOSCH BFG 9000</a></h3>
+                  <h3 class="product-card-text"><a class="product-card-link" href="#">Перфоратор BOSCH  BFG 9000</a></h3>
                   <span class="past-price">32500 Р.</span>
                   <span class="present-price">25500 Р.</span>
                 </article>
               </li>
-              <li class="popular-products-list">
+              <li class="popular-products-list new-item">
                 <article class="product-card">
                   <img class="product-img" src="img/bosch-bfg-3000.jpg" alt="Перфоратор BOSCH BFG 3000" width="127" height="112">
-                  <h3><a class="product-card-link" href="#">Перфоратор BOSCH BFG 3000</a></h3>
+                  <h3 class="product-card-text"><a class="product-card-link" href="#">Перфоратор BOSCH  BFG 3000</a></h3>
                   <span class="past-price">22500 Р.</span>
                   <span class="present-price">15500 Р.</span>
                 </article>
@@ -200,16 +193,16 @@
               <li class="popular-products-list">
                 <article class="product-card">
                   <img class="product-img" src="img/bosch-bfg-6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="144" height="128">
-                  <h3><a class="product-card-link" href="#">Перфоратор BOSCH BFG 6000</a></h3>
+                  <h3 class="product-card-text"><a class="product-card-link" href="#">Перфоратор BOSCH  BFG 6000</a></h3>
                   <span class="past-price">30500 Р.</span>
                   <span class="present-price">25500 Р.</span>
                 </article>
               </li>
-              <li class="popular-products-list">
+              <li class="popular-products-list new-item">
                 <article class="product-card">
-                  <img class="product-card-img" src="img/bosch-bfg-2000.jpg" alt="Перфоратор BOSCH BFG 2000" width="127" height="112">
-                  <h3><a class="product-card-link" href="#">Перфоратор BOSCH BFG 2000</a></h3>
-                  <span class="past-price"></span>
+                  <img class="product-img" src="img/bosch-bfg-2000.jpg" alt="Перфоратор BOSCH BFG 2000" width="127" height="112">
+                  <h3 class="product-card-text"><a class="product-card-link" href="#">Перфоратор BOSCH  BFG 2000</a></h3>
+                  <span class="past-price price-hide">0</span>
                   <span class="present-price">12500 Р.</span>
                 </article>
               </li>
@@ -271,42 +264,42 @@
       </section>
       <section class="serveces">
         <div class="container">
-          <div class="serveces-title-wrapper">
-            <h2 class="serveces-title">Сервисы</h2>
-            <p class="serveces-text">
-              Хороший интернет-магазин отличается от плохого не только ценами!<br>
-              Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
-            </p>
-          </div>
+         <h2 class="serveces-title">Сервисы</h2>
+         <p class="serveces-text">
+            Хороший интернет-магазин отличается от плохого не только ценами!<br>
+            Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+         </p>
           <div class="serveces-slider">
+            <div class="services-controls">
+              <button class="services-control services-control-first services-control-active">Доставка</button>
+              <button class="services-control services-control-second">Гарантия</button>
+              <button class="services-control services-control-third">Кредит</button>
+            </div>
             <ul class="serveces-roll">
-              <li class="serveces-list">
-                <div class="serveces-slide">
-                  <h3 class="serveces-slide-title">Доставка</h3>
-                  <p class="serveces-slide-text">
-                    Мы с удовольствием доставим ваш товар прямо<br>
-                    к вашему подъезду совершенно бесплатно!<br>
-                    Ведь мы неплохо заработаем,<br>
-                    поднимая его на ваш этаж!
-                  </p>
-                </div>
+              <li class="serveces-list services-delivery slide-active">
+                <h3 class="serveces-slide-title">Доставка</h3>
+                <p class="serveces-slide-text">
+                  Мы с удовольствием доставим ваш товар прямо<br>
+                  к вашему подъезду совершенно бесплатно!<br>
+                  Ведь мы неплохо заработаем,<br>
+                  поднимая его на ваш этаж!
+                </p>
               </li>
-              <li class="serveces-list">
-                <div class="serveces-slide">
-                  <h3 class="serveces-slide-title">Гарантия</h3>
-                  <p class="serveces-slide-text">
-                    Если купленный у нас товар поломается или заискрит,  а также в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.  Дом уж восстановите как-нибудь сами.
-                  </p>
-                </div>
+              <li class="serveces-list services-guarantee">
+                <h3 class="serveces-slide-title">Гарантия</h3>
+                <p class="serveces-slide-text">
+                  Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его
+                  возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом
+                  уж восстановите как-нибудь сами.
+                </p>
               </li>
-              <li class="serveces-list">
-                <div class="serveces-slide">
-                  <h3 class="serveces-slide-title">Кредит</h3>
-                  <p class="serveces-slide-text">
-                    Залезть в долговую яму стало проще! <br>
-                    Кредитные консультанты придут вам на помощь.
-                  </p>
-                </div>
+              <li class="serveces-list services-credit">
+                <h3 class="serveces-slide-title">Кредит</h3>
+                <p class="serveces-slide-text">
+                  Залезть в долговую яму стало проще! <br>
+                  Кредитные консультанты придут вам на помощь.
+                </p>
+                <a href="#" class="credit-link">Отправить заявку</a>
               </li>
             </ul>
           </div>
@@ -320,7 +313,7 @@
             Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
           </p>
           <p class="about-company-text">
-            Мы можем доставить ваш товар в самые отдаленные точки России!
+            Мы можем доставить ваш товар в самые отдаленные точки России!<br>
             Техномарт работает со многими транспортными компаниями:
           </p>
           <ul class="about-company-roll">
@@ -353,9 +346,9 @@
       <div class="footer-first-layer">
         <div class="container footer-first-container">
           <div class="footer-about">
-            <div class="logo-wrapper">
-              <a class="logo-link" href="index.html">
-                <img class="logo-img" src="img/logo-technomart.svg" alt="Логотип Техномарт" width="138" height="23">
+            <div class="logo-footer-wrapper">
+              <a class="logo-footer-link" href="index.html">
+                <img class="logo-footer-img" src="img/logo-technomart.svg" alt="Логотип Техномарт" width="138" height="23">
               </a>
             </div>
             <p class="footer-location">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 </p>
@@ -404,31 +397,20 @@
             &copy; 2010–2019 Компания «Техномарт»  <br>
             Все права защищены
           </address>
-          <div class="social-networks">
-            <ul class="social-networks-roll">
-              <li class="social-list">
-                <a class="social-link" href="#">
-                  <div class="social-backround">
-                    <img class="social-img" src="img/icon-vk.svg" alt="Вконтакте">
-                  </div>
-                </a>
-              </li>
-              <li class="social-list">
-                <a class="social-link" href="#">
-                  <div class="social-backround">
-                    <img class="social-img" src="img/icon-fb.svg" alt="Facebook">
-                  </div>
-                </a>
-              </li>
-              <li class="social-list">
-                <a class="social-link" href="#">
-                  <div class="social-backround">
-                    <img class="social-img" src="img/icon-insta.svg" alt="Instagram">
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
+
+
+          <ul class="social-networks-roll">
+            <li class="social-list">
+              <a class="social-link social-vk" href="#"></a>
+            </li>
+            <li class="social-list">
+              <a class="social-link social-facebook" href="#"></a>
+            </li>
+            <li class="social-list">
+              <a class="social-link social-instagram" href="#"></a>
+            </li>
+          </ul>
+
 
          <div class="footer-feedback-wrapper">
            <div class="footer-feedback">
