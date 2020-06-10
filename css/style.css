@@ -262,13 +262,17 @@ img {
 
 .header-wrapper {
   background-color: var(--basic-background);
-  padding-bottom: 1px;
+  padding-bottom: 60px;
+}
+
+.header-account-wrapper{
+  padding-top: 49px;
+  padding-bottom: 45px;
 }
 
 .header-account-container {
   display: flex;
   justify-content: space-between;
-  margin-top: 49px;
 }
 
 .header-contacts {
@@ -366,8 +370,6 @@ img {
 .header-nav {
   background-color: var(--main-theme);
   box-shadow: inset 0px -5px 0px var(--main-theme-darker);
-  margin-top: 45px;
-  margin-bottom: 60px;
 }
 
 .header-nav-list {
@@ -404,7 +406,6 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
-  margin-top: 60px;
 }
 
 .slider-list {
@@ -655,7 +656,7 @@ img {
 /*1st part*/
 
 .popular-products {
-  margin-top: 60px;
+  padding-bottom: 70px;
 }
 
 .popular-products-list {
@@ -677,7 +678,6 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 70px;
 }
 
 .popular-title {
@@ -754,13 +754,12 @@ img {
 .serveces-slider {
   display: flex;
   align-items: center;
-  margin-bottom: 60px;
 }
 
 .serveces {
   background-color: var(--basic-background);
-  padding-top: 1px;
-  padding-bottom: 1px;
+  padding-top: 63px;
+  padding-bottom: 60px;
 }
 
 .serveces-title {
@@ -770,7 +769,6 @@ img {
   text-transform: uppercase;
   font-weight: 400;
   margin: 0;
-  margin-top: 63px;
 }
 
 .serveces-text,
@@ -876,8 +874,8 @@ img {
 .company-n-contacts {
   display: flex;
   justify-content: space-between;
-  margin-top: 70px;
-  margin-bottom: 70px;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
 .about-company {
@@ -991,6 +989,10 @@ img {
 /*footer*/
 /*1st part*/
 
+.offers-section{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 
 .footer-first-layer {
   background-color: var(--main-theme);
@@ -1289,8 +1291,8 @@ img {
 /*breadcrumbs*/
 
 .breadcrumbs {
-  margin-top: 21px;
-  margin-bottom: 20px;
+  padding-top: 21px;
+  padding-bottom: 20px;
 }
 
 .breadcrumbs-link {
@@ -1814,7 +1816,7 @@ img {
 }
 
 .product {
-  margin-bottom: 59px;
+  padding-bottom: 59px;
 
 }
 
