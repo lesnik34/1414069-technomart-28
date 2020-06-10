@@ -61,7 +61,7 @@ body {
   min-width: 960px;
   font-size: 18px;
   color: var(--basic-black);
-  font-family: 'Cuprum', sans-serif;
+  font-family: 'Cuprum', Arial, sans-serif;
   font-weight: 400;
   background-color: var(--basic-white);
   margin: 0;
@@ -773,7 +773,7 @@ img {
 
 .services-text,
 .services-slide-text {
-  font-family: PT Sans;
+  font-family: PT Sans, Arial, sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
@@ -889,7 +889,7 @@ img {
 }
 
 .about-company-text {
-  font-family: PT Sans;
+  font-family: PT Sans, Arial, sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
@@ -953,7 +953,7 @@ img {
 .contacts-text {
   font-size: 13px;
   line-height: 24px;
-  font-family: PT Sans;
+  font-family: PT Sans, Arial, sans-serif;
   font-weight: 400;
   color: var(--basic-black);
   margin: 0;
@@ -1293,7 +1293,7 @@ img {
 }
 
 .breadcrumbs-link {
-  font-family: PT Sans;
+  font-family: PT Sans, Arial, sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 18px;
@@ -1359,7 +1359,7 @@ img {
   padding: 0;
   font-size: 13px;
   line-height: 18px;
-  font-family: PT Sans;
+  font-family: PT Sans, Arial, sans-serif;
   font-weight: 400;
   background-color: var(--basic-beige);
   color: var(--basic-black);
@@ -1370,7 +1370,7 @@ img {
 }
 
 .filter-subtitle {
-  font-family: PT Sans;
+  font-family: PT Sans, Arial, sans-serif;
   font-weight: 700;
   font-size: 17px;
   line-height: 30px;
@@ -1471,7 +1471,7 @@ img {
 }
 
 .filter-label {
-  font-family: PT Sans;
+  font-family: PT Sans, Arial, sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 19px;
@@ -1482,7 +1482,7 @@ img {
 .filter-apply {
   border: 1px solid var(--light-grey);
   background-color: transparent;
-  font-family: PT Sans;
+  font-family: PT Sans, Arial, sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 18px;
@@ -1539,7 +1539,7 @@ img {
 .sort-link {
   color: var(--basic-greylight);
   border-bottom: 1px dotted var(--basic-red);
-  font-family: PT Sans;
+  font-family: PT Sans, Arial, sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 18px;
@@ -1627,7 +1627,7 @@ img {
 .product-card-link {
   color: var(--basic-black);
   line-height: 20px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: PT Sans, Arial, sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
@@ -1642,7 +1642,7 @@ img {
   text-decoration: line-through;
   font-size: 17px;
   line-height: 18px;
-  font-family: PT Sans;
+  font-family: PT Sans, Arial, sans-serif;
   margin-bottom: 14px;
 }
 
@@ -1652,7 +1652,7 @@ img {
   line-height: 18px;
   font-weight: 700;
   background-color: var(--basic-red);
-  font-family: PT Sans;
+  font-family: PT Sans, Arial, sans-serif;
   display: inline-block;
   padding: 10px 29px;
   border-radius: 2px 0 0 2px;
@@ -1771,7 +1771,7 @@ img {
 .pages-link {
   border: 1px solid var(--light-grey);
   color: var(--basic-black);
-  font-family: PT Sans;
+  font-family: PT Sans, Arial, sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   font-size: 13px;
@@ -1818,7 +1818,7 @@ img {
 }
 
 .product-description-text {
-  font-family: PT Sans;
+  font-family: PT Sans, Arial, sans-serif;
   color: var(--basic-black);
   font-size: 13px;
   line-height: 24px;
