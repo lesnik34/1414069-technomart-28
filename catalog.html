@@ -542,16 +542,19 @@
         </div>
       </div>
     </footer>
-    <section class="visually-hidden">
+
+    <section class="popup-alert popup-section">
       <h2 class="visually-hidden">Корзина</h2>
 
-      <h2>Товар добавлен в корзину!</h2>
+      <h2 class="popup-alert-header">Товар добавлен в корзину!</h2>
 
-      <div>
-        <a href="#">Оформить заказ</a>
-        <button type="button">Продолжить покупки</button>
+      <div class="popup-controls">
+        <a class="main-button popup-buttons-alert popup-checkout" href="#">Оформить заказ</a>
+        <button class="main-button popup-buttons-alert popup-continue" type="button">Продолжить покупки</button>
       </div>
-      <button type="button" aria-label="Закрыть"></button>
+      <button type="button" aria-label="Закрыть" class="popup-close close-alert"></button>
     </section>
+
+    <script src="js/script.js"></script>
   </body>
 </html>

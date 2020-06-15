@@ -480,33 +480,53 @@
         </div>
       </div>
     </footer>
-    <section class="popup-contacts">
-      <div class="popup-contacts-container">
-        <h2 class="visually-hidden">Форма для обратной связи</h2>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <div class="popup-name">
-            <label class="popup-label" for="client-name">Ваше имя:</label>
-            <input type="text" name="client-name" id="client-name" placeholder="Имя Фамилия">
-          </div>
+    <section class="popup-contacts-section popup-section">
+      <h2 class="visually-hidden">Форма для обратной связи</h2>
+      <form action="https://echo.htmlacademy.ru" method="post" class="popup-form">
+        <div class="popup-contacts">
+          <label class="popup-item">
+            Ваше имя:
+            <input type="text" name="client-name" class="client-information" placeholder="Имя Фамилия">
+          </label>
 
-          <div class="popup-email">
-            <label class="popup-label" for="client-email">Ваш e-mail:</label>
-            <input type="email" name="client-email" id="client-email" placeholder="email@example.com">
-          </div>
+          <label class="popup-item">
+            Ваш e-mail:
+            <input type="email" name="client-email" class="client-information" placeholder="email@example.com">
+          </label>
 
-          <div class="popup-text">
-            <label for="client-comment">Текст письма:</label>
-            <textarea name="client-comment" id="client-comment" rows="6" cols="30"></textarea>
-          </div>
-          <button type="submit">Отправить</button>
-        </form>
-        <button type ="button" aria-label="Закрыть окно"></button>
-      </div>
+          <label class="popup-item popup-text">
+            Текст письма:
+            <textarea name="client-comment" class="client-information client-text" rows="6" cols="30" placeholder="В свободной форме"></textarea>
+          </label>
+        </div>
+        <button type="submit" class="popup-submit main-button">Отправить</button>
+      </form>
+      <button type ="button" class="popup-close close-form" aria-label="Закрыть окно"></button>
     </section>
-    <section class="visually-hidden">
+    <section class="popup-map-section popup-section">
       <h2 class="visually-hidden">Карта навигации</h2>
 
-      <button type ="button" aria-label="Закрыть окно"></button>
+      <div class="yandex-map">
+        <a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a>
+        <a href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.323465%2C59.938579&utm_medium=mapframe&utm_source=maps&z=16.76" style="color:#eee;font-size:12px;position:absolute;top:14px;">Большая Конюшенная улица, 19/8 — Яндекс.Карты</a>
+        <iframe class="yandex-map" src="https://yandex.ru/map-widget/v1/-/CCQdz2H5SA" frameborder="1" allowfullscreen="true" style="position:relative;">
+        </iframe>
+      </div>
+      <button type ="button" aria-label="Закрыть окно" class="popup-close close-map"></button>
     </section>
+
+    <section class="popup-alert popup-section">
+      <h2 class="visually-hidden">Корзина</h2>
+
+      <h2 class="popup-alert-header">Товар добавлен в корзину!</h2>
+
+      <div class="popup-controls">
+        <a class="main-button popup-buttons-alert popup-checkout" href="#">Оформить заказ</a>
+        <button class="main-button popup-buttons-alert popup-continue" type="button">Продолжить покупки</button>
+      </div>
+      <button type="button" aria-label="Закрыть" class="popup-close close-alert"></button>
+    </section>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
