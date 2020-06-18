@@ -16,14 +16,14 @@
             <img class="logo-img" src="img/logo-technomart.svg" alt="Логотип Техномарт" width="108" height="18">
           </a>
           <form class="header-form-search" action="https://echo.htmlacademy.ru" method="get">
-            <button class="button button-search" type="submit">
-              <svg class="icon-search" width="17" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586 15.586 17l-3.542-3.542A7.465 7.465 0 017.5 15 7.5 7.5 0 1115 7.5c0 1.643-.542 3.24-1.542 4.544zM7.5 2A5.506 5.506 0 002 7.5 5.506 5.506 0 007.5 13c3.032 0 5.5-2.468 5.5-5.5C13 4.467 10.532 2 7.5 2z" fill="#fff"/>
-              </svg>
-            </button>
+
             <label class="visually-hidden" for="search">Поиск</label>
             <input class="header-input-search" type="search" id="search" placeholder="Поиск:" name="search" required>
-
+            <button class="button button-search" type="submit">
+              <svg class="icon-search" width="17" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586 15.586 17l-3.542-3.542A7.465 7.465 0 017.5 15 7.5 7.5 0 1115 7.5c0 1.643-.542 3.24-1.542 4.544zM7.5 2A5.506 5.506 0 002 7.5 5.506 5.506 0 007.5 13c3.032 0 5.5-2.468 5.5-5.5C13 4.467 10.532 2 7.5 2z"/>
+              </svg>
+            </button>
           </form>
 
           <ul class="header-actions-list">
@@ -175,23 +175,23 @@
                 <legend class="filter-subtitle">Производители:</legend>
                 <ul class="filter-list">
                   <li class="filter-item">
-                    <input type="checkbox" name="manuf-bosch" id="manuf-bosch" checked>
+                    <input type="checkbox" class="visually-hidden filter-input-checkbox" name="manuf-bosch" id="manuf-bosch" checked>
                     <label class="filter-label" for="manuf-bosch">Bosch</label>
                   </li>
                   <li class="filter-item">
-                    <input type="checkbox" name="manuf-interskol" id="manuf-interskol">
+                    <input type="checkbox" class="visually-hidden filter-input-checkbox" name="manuf-interskol" id="manuf-interskol">
                     <label class="filter-label" for="manuf-interskol">Интерскол</label>
                   </li>
                   <li class="filter-item">
-                    <input type="checkbox" name="manuf-makita" id="manuf-makita" checked>
+                    <input type="checkbox" class="visually-hidden filter-input-checkbox" name="manuf-makita" id="manuf-makita" checked>
                     <label class="filter-label" for="manuf-makita">Makita</label>
                   </li>
                   <li class="filter-item">
-                    <input type="checkbox" name="manuf-dewalt" id="manuf-dewalt">
+                    <input type="checkbox" class="visually-hidden filter-input-checkbox" name="manuf-dewalt" id="manuf-dewalt">
                     <label class="filter-label" for="manuf-dewalt">Dewalt</label>
                   </li>
                   <li class="filter-item">
-                    <input type="checkbox" name="manuf-hitachi" id="manuf-hitachi">
+                    <input type="checkbox" class="visually-hidden filter-input-checkbox" name="manuf-hitachi" id="manuf-hitachi">
                     <label class="filter-label" for="manuf-hitachi">Hitachi</label>
                   </li>
                 </ul>
@@ -200,12 +200,12 @@
                 <legend class="filter-subtitle">Питание:</legend>
                 <ul class="filter-list">
                   <li class="filter-item">
-                    <input type="radio" name="power-group" id="power-accum" value="accumulator" checked>
-                    <label class="filter-label" for="power-accum">Аккумуляторные</label>
+                    <input class="visually-hidden filter-input-radio" type="radio" name="power-group" id="power-accum" value="accumulator" checked>
+                    <label class="filter-label label-radio" for="power-accum">Аккумуляторные</label>
                   </li>
                   <li class="filter-item">
-                    <input type="radio" name="power-group" value="net" id="power-net">
-                    <label class="filter-label" for="power-net">Сетевые</label>
+                    <input class="visually-hidden filter-input-radio" type="radio" name="power-group" value="net" id="power-net">
+                    <label class="filter-label label-radio" for="power-net">Сетевые</label>
                   </li>
                 </ul>
               </fieldset>

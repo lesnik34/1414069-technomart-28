@@ -43,7 +43,7 @@
       <div class="header-account-wrapper">
         <div class="container header-account-container">
           <p class="header-brief-info">
-            Интернет-магазин <br> строительных материвалов <br> и инструментов для ремонта
+            Интернет-магазин <br> строительных материалов <br> и инструментов для ремонта
           </p>
           <div class="header-contacts">
             <a class="header-tel" href="tel:+78125550555">+7 (812) 555-05-55</a>
@@ -122,14 +122,14 @@
             </li>
             <li class="product-item slider-list">
               <ul class="product-slider-list">
-                <li class="product-slider-item slide-product-first slide-active">
+                <li class="product-slider-item slide-product-first slide-active" data-product-number="0">
                   <div class="product-head-wrapper">
                     <h2 class="product-item-title">Перфораторы</h2>
                     <p class="product-item-text">Настоящие мужские игрушки</p>
                   </div>
                   <a class="product-item-link main-button" href="catalog.html">Открыть каталог</a>
                 </li>
-                <li class="product-slider-item slide-product-second">
+                <li class="product-slider-item slide-product-second" data-product-number="1">
                   <div class="product-head-wrapper">
                     <h2 class="product-item-title">Дрели</h2>
                     <p class="product-item-text">Соседям на радость!</p>
@@ -138,7 +138,7 @@
                 </li>
               </ul>
               <div class="product-controls-arrows">
-                <button class="product-arrows product-arrow-left" type="button" aria-label="Пролистать влево"></button>
+                <button class="product-arrows product-arrow-left" type="button" aria-label="Пролистать влево" disabled></button>
                 <button class="product-arrows product-arrow-right" type="button" aria-label="Пролистать вправо"></button>
               </div>
               <div class="product-controls-dots">
@@ -325,9 +325,9 @@
          </p>
           <div class="services-slider">
             <div class="services-controls">
-              <button class="services-control services-control-active">Доставка</button>
-              <button class="services-control">Гарантия</button>
-              <button class="services-control">Кредит</button>
+              <button class="services-control services-control-active" data-service-name="delivery">Доставка</button>
+              <button class="services-control" data-service-name="guarantee">Гарантия</button>
+              <button class="services-control" data-service-name="credit">Кредит</button>
             </div>
             <ul class="services-list">
               <li class="services-item services-delivery slide-active">
@@ -416,7 +416,7 @@
                   <a class="footer-nav-link" href="#">Новости</a>
                 </li>
                 <li class="footer-nav-item">
-                  <a class="footer-nav-link" href="catalog.html">Католог</a>
+                  <a class="footer-nav-link" href="catalog.html">Каталог</a>
                 </li>
                 <li class="footer-nav-item">
                   <a class="footer-nav-link" href="#">Доставка</a>
@@ -486,12 +486,12 @@
         <div class="popup-contacts">
           <label class="popup-item">
             Ваше имя:
-            <input type="text" name="client-name" class="client-information" placeholder="Имя Фамилия">
+            <input type="text" name="client-name" class="client-information client-memory" data-client-information="name" placeholder="Имя Фамилия">
           </label>
 
           <label class="popup-item">
             Ваш e-mail:
-            <input type="email" name="client-email" class="client-information" placeholder="email@example.com">
+            <input type="email" name="client-email" class="client-information client-memory" data-client-information="email" placeholder="email@example.com">
           </label>
 
           <label class="popup-item popup-text">
