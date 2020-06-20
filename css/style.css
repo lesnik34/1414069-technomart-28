@@ -684,6 +684,7 @@ img {
 
 .slide-product-second {
   background: url(../img/background-drill.jpg) center center no-repeat;
+  background-size: cover;
   display: none;
 }
 
@@ -994,7 +995,8 @@ img {
   box-shadow: none;
 }
 
-.services-control-active:hover {
+.services-control-active:hover,
+.services-control-active:focus {
   cursor: auto;
   background-color: var(--basic-white);
 }
@@ -1198,6 +1200,11 @@ img {
 .footer-phonenumber {
   line-height: 24px;
   color: var(--basic-white);
+}
+
+.footer-phonenumber:hover,
+.footer-phonenumber:focus {
+  color: var(--basic-greylight);
 }
 
 .footer-nav-item,
@@ -1576,6 +1583,11 @@ img {
   text-transform: uppercase;
 }
 
+.filter-part:not(:first-child) .filter-subtitle {
+  /*Change it*/
+  padding-top: 18px;
+}
+
 .filter-part {
   border: none;
   padding: 0;
@@ -1727,6 +1739,11 @@ img {
   padding-top: 10px;
   padding-bottom: 10px;
   cursor: pointer;
+}
+
+.filter-apply:hover,
+.filter-apply:focus {
+  border-color: var(--basic-greylight);
 }
 
 /*sort*/
@@ -2179,8 +2196,14 @@ img {
   width: 220px;
   margin-top: 10px;
   font-family: 'PT Sans', Arial, sans-serif;
-  border-color: var(--basic-greylight);
-  border: 2px solid;
+  border: 2px solid var(--basic-greylight);
+  border-radius: 2px;
+}
+
+.client-information:hover,
+.client-information:focus {
+  border-color: var(--grey-muddy);
+  color: var(--basic-black);
 }
 
 .client-text {

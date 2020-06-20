@@ -10,7 +10,6 @@ var popupForm = document.querySelector('.popup-form');
 var popupAlert = document.querySelector('.popup-alert');
 var closeAlert = document.querySelector('.close-alert');
 
-
 var checkAndSetStorage = function (item, keyWord) {
   var storage = isStorageSupportAndGet(keyWord).result;
   storage ? item.value = isStorageSupportAndGet(keyWord).result : item.focus();
@@ -48,8 +47,8 @@ var checkFormAndStore = function (form) {
       if (!clientsMemory[index].value) {
         evt.preventDefault();
         isContinue = false;
-      } else {
-        isStorageSupportAndGet(keyWord).question ? localStorage.setItem(keyWord, clientsMemory[index].value) : false;
+      } else if (isStorageSupportAndGet(keyWord).question) {
+        localStorage.setItem(keyWord, clientsMemory[index].value);
       }
       index++;
     }
@@ -96,12 +95,6 @@ var closeByKey = function (key) {
 }
 
 var activeAndDisable = function (presentItem, nextItem, subItemPresent, subItemNext) {
-  var arrowLeft = document.querySelector('.product-arrow-left');
-  var arrowRight = document.querySelector('.product-arrow-right');
-  var dotLeft = document.querySelector('.product-dot-left');
-  var dotRight = document.querySelector('.product-dot-right');
-
-
   var isItLeftArrow = presentItem.classList.contains('product-arrow-left');
   var isItRightArrow = presentItem.classList.contains('product-arrow-right');
   if (isItLeftArrow || isItRightArrow) {
@@ -160,10 +153,9 @@ var sliderProduct = function () {
 
 var sliderServices = function () {
   var servicesControls = document.querySelectorAll('.services-control');
-  var servicesItems = document.querySelectorAll('.services-item');
   var servicesList = document.querySelector('.services-list');
 
-  servicesControls.forEach(function (item, index) {
+  servicesControls.forEach(function (item) {
     item.addEventListener('click', function () {
       var activeButton = document.querySelector('.services-control-active');
       activeButton.classList.remove('services-control-active');
@@ -178,13 +170,41 @@ var sliderServices = function () {
   })
 }
 
-addPopupFunctionOpen(contactsHelp, popupContactsSection);
-addPopupFunctionClose(closeForm, popupContactsSection);
-addPopupFunctionOpen(mapLink, popupMapSection);
-addPopupFunctionClose(closeMap, popupMapSection);
-setOpenBuyLinks();
-addPopupFunctionClose(closeAlert, popupAlert);
-checkFormAndStore(popupForm);
-closeByKey(CLOSE_KEY);
-sliderProduct();
-sliderServices();
+var activateScriptsIndex = function () {
+  addPopupFunctionOpen(contactsHelp, popupContactsSection);
+  addPopupFunctionClose(closeForm, popupContactsSection);
+  addPopupFunctionOpen(mapLink, popupMapSection);
+  addPopupFunctionClose(closeMap, popupMapSection);
+  setOpenBuyLinks();
+  addPopupFunctionClose(closeAlert, popupAlert);
+  checkFormAndStore(popupForm);
+  closeByKey(CLOSE_KEY);
+  sliderProduct();
+  sliderServices();
+}
+
+var activateScriptCatalog = function () {
+  setOpenBuyLinks();
+  addPopupFunctionClose(closeAlert, popupAlert);
+  closeByKey(CLOSE_KEY);
+}
+
+var checkPage = function () {
+  var page = document.querySelector('main');
+  var isIndex = page.classList.contains('page-index');
+  var isCatalog = page.classList.contains('page-catalog');
+  if (isIndex) {
+    activateScriptsIndex();
+  } else if (isCatalog) {
+    activateScriptCatalog();
+  }
+}
+
+checkPage();
+
+
+
+
+
+
+
