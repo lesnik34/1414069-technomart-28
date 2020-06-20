@@ -5,7 +5,7 @@
     <title>HTML Academy: Техномарт</title>
     <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-minimize.css">
   </head>
   <body>
     <header class="header-wrapper">
@@ -197,7 +197,7 @@
                 </ul>
               </fieldset>
               <fieldset class="filter-part">
-                <legend class="filter-subtitle">Питание:</legend>
+                <legend class="filter-subtitle filter-power">Питание:</legend>
                 <ul class="filter-list">
                   <li class="filter-item">
                     <input class="visually-hidden filter-input-radio" type="radio" name="power-group" id="power-accum" value="accumulator" checked>
@@ -219,14 +219,14 @@
               <li class="sort-item sort-by-type"><a class="sort-link" href="#">По типу</a></li>
               <li class="sort-item sort-by-func"><a class="sort-link" href="#">По функционалу</a></li>
               <li class="sort-item sort-item-up sort-active">
-                <a href="#" class="sort-direction sort-up" aria-label="По верхней грани">
+                <a href="#" class="sort-direction sort-up" aria-label="По возростанию">
                   <svg class="sort-icon" width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5.5 10L0 0h11"/>
                   </svg>
                 </a>
               </li>
               <li class="sort-item sort-item-down">
-                <a href="#" class="sort-direction sort-down" aria-label="По нижней грани">
+                <a href="#" class="sort-direction sort-down" aria-label="По убыванию">
                   <svg class="sort-icon" width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5.5 10L0 0h11"/>
                   </svg>
@@ -450,9 +450,9 @@
         <div class="container">
           <h2 class="product-description-title">Пара слов о перфораторах</h2>
           <p class="product-description-text">
-            Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
-            Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.
-            В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+            Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
+            Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.<br>
+            В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.<br>
           </p>
         </div>
       </section>
@@ -555,6 +555,6 @@
       <button type="button" aria-label="Закрыть" class="popup-close close-alert"></button>
     </section>
 
-    <script src="js/script.js"></script>
+    <script src="js/script-compress.js"></script>
   </body>
 </html>
